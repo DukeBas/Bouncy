@@ -1,0 +1,88 @@
+$sidebarButtonTextColor: #333;
+$sidebarButtonBackgroundColor: antiquewhite;
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button {
+    background-color: $sidebarButtonBackgroundColor;
+    border: none;
+    color: $sidebarButtonTextColor;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+select {
+    background-color: $sidebarButtonBackgroundColor;
+    border: none;
+    color: $sidebarButtonTextColor;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#sidebar {
+    height: 100%;
+    color: $sidebarButtonBackgroundColor;
+    text-align: center;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+#sidebar .closebtn {
+    position: absolute;
+    color: red;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+
+#openSide {
+    font-size: 24px;
+    cursor: pointer; 
+    position: absolute;
+    top: 20;
+    left: 20;
+    height: 40px;
+    line-height: 40px;  
+    width: 40px;  
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: $sidebarButtonTextColor;
+    color: $sidebarButtonBackgroundColor;
+    text-align: center;
+    cursor: pointer;
+}
+
+#GitHub {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: 64px;
+    right: 93px;
+}
