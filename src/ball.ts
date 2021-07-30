@@ -18,12 +18,12 @@ export class Ball {
   valid: boolean; // marking for removal to save resources
   settings: bSettings;
 
-  constructor(sketchRef: p5, startPos: p5.Vector, startVel: p5.Vector, size: number, settings?: bSettings) {
+  constructor(sketchRef: p5, startPos: p5.Vector, startVel: p5.Vector, size: number, color: p5.Color, settings?: bSettings) {
     this.p = sketchRef;
     this.pos = startPos;
     this.vel = startVel;
     this.size = size;
-    this.color = this.p.color(`hsb(${Math.round(Math.random() * 360)}, 100%, 100%)`);
+    this.color = color;
     this.valid = true;
     if (settings === undefined) {
       this.settings = exampleBSettings;
