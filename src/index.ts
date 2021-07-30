@@ -10,5 +10,6 @@ declare global {
         closeSidebar: Function,
         saveCanvas: Function,
         windowResized: Function,
+        toggleBorders: Function,
     }
 }
