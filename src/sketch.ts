@@ -14,8 +14,6 @@ const maxCounterStep = 5;
 const sketch = (p: p5) => {
   const balls: Ball[] = [];
 
-  p.preload = () => { };
-
   // returns a new ball object
   const newBall = () => {
     const pos = p.createVector(p.random(0, p.width), -radius);
